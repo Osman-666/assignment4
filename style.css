@@ -13,9 +13,6 @@ body{
     background-attachment: scroll;
     background-size: cover;
 }
-#main-section{
-    
-}
 
 nav{
     height: 50px;
@@ -134,5 +131,36 @@ nav ul li a:hover, a.active{
 #conform-area{
     display: none;
     height: 500px;
-    margin: 0 auto;
 }
+.congrats{
+    max-height: 50%;
+}
+.congrats h3,h4{
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+}
+
+.alert {
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #43af43;
+    color: #ffffff;
+    max-width: 50%;
+  }
+  
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 35px;
+    line-height: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .closebtn:hover {
+    color: black;
+  }

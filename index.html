@@ -115,12 +115,19 @@
 
         <!-- conform section -->
         <div id="conform-area">
-            <h1>Conform Area</h1>
+            <div class="congrats">
+                <div class="alert">
+                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                    <h3>✈️Congratulation Dear Sir/Madam✈️</h3>
+                    <h4>Your booking is successfully Done.We hope you will enjoy your trip</h4>
+                    <h3>😊Happy Journey😊</h3>
+                </div>
+            </div>
         </div>
 
     <!-- script section -->
     <script>
-
+            // this function used for count ticket
         function handleTicketChange(ticket,isIncrease) {
             const ticketInput = document.getElementById(ticket+'-count');
             const ticketCount = parseInt(ticketInput.value);
@@ -135,6 +142,7 @@
             calculateSubTotal();
         }
 
+            // this function is used for getting total amount
         function calculateSubTotal(){
             const firstClassCount=getTicketValue('firstClass');
             const economyCount=getTicketValue('economy');
@@ -144,6 +152,7 @@
             document.getElementById('vat-amount').innerText='$' + vatAmount;
             const grandTotal=vatAmount + subTotalAmount;
             document.getElementById('grandTotal-amount').innerText='$' + grandTotal;
+            return grandTotal;
         }
 
         function getTicketValue(ticketClass){

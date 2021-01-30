@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <section>
+    <div id="login-area">
         <!--Header and Menu Section-->
         <header class="container">
             <nav>
@@ -103,14 +103,20 @@
                         </div>
                     </div>
                 </div>
-                <button class="btn-style">Book Now</button>
+                <button id="login-btn" class="btn-style">Book Now</button>
             </div>
 
             <div class="booking-content">
                 <h1>discover <br> around the world</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt nobise voluptatibus quam</p>
             </div>
-    </section>
+            </main>
+        </div>
+
+        <!-- conform section -->
+        <div id="conform-area">
+            <h1>Conform Area</h1>
+        </div>
 
     <!-- script section -->
     <script>
@@ -146,10 +152,14 @@
             return ticketCount;
         }
 
+        document.getElementById('login-btn').addEventListener("click",function(){
+            const loginArea=document.getElementById('login-area');
+            loginArea.style.display="none";
+            const conformArea=document.getElementById('conform-area');
+            conformArea.style.display="block";
+        })
+
     </script>
-
-
-
     <!--Thank You-->
 </body>
 

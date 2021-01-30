@@ -13,6 +13,9 @@ body{
     background-attachment: scroll;
     background-size: cover;
 }
+#main-section{
+    
+}
 
 nav{
     height: 50px;
@@ -125,4 +128,11 @@ nav ul li a:hover, a.active{
 .amount{
     display: flex;
     justify-content: space-between;
+}
+
+/* Conform section css */
+#conform-area{
+    display: none;
+    height: 500px;
+    margin: 0 auto;
 }
